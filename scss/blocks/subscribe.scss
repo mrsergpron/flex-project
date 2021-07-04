@@ -1,0 +1,70 @@
+.subscribe {
+  &__wrap {
+    margin-top: 100px;
+    background: url(../img/banner2.jpg) no-repeat center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__info {
+    width: 600px;
+    margin-left: 110px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 2.6px;
+    color: #2d2b27;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 23px;
+    letter-spacing: 6.4px;
+    color: #1a1a1a;
+    text-align: center;
+  }
+
+  &__btn {
+    $values: (
+      bg: $black,
+      fs: 14px,
+      lh: 23px,
+      ls: 0.7px,
+      br: 40px,
+      w: 200px,
+      clr: $white,
+    );
+
+    @include btn($values...) {
+    }
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .subscribe {
+    &__wrap {
+      background: none;
+      background-color: $bg-subscribe;
+    }
+    &__info {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .subscribe {
+    &__wrap {
+      margin-top: 50px;
+    }
+  }
+}
