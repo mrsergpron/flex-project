@@ -1,0 +1,133 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.header::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 5;
+}
+.header__content {
+  max-width: 1032px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.header__body {
+  position: relative;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__burger {
+  display: none;
+  position: relative;
+  z-index: 5;
+}
+
+.header__list {
+  display: flex;
+}
+.header__item {
+  position: relative;
+  margin: 0 0 0 20px;
+  z-index: 5;
+}
+.header__link {
+  font-size: 18px;
+  color: #000;
+  text-transform: uppercase;
+  transition: 0.3s color ease 0s;
+}
+.header__link:hover {
+  color: brown;
+}
+
+@media (max-width: 768px) {
+  .header__body {
+    height: 50px;
+    justify-content: flex-end;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+  .header__burger::after,
+  .header__burger::before {
+    position: absolute;
+    content: "";
+    background-color: #000;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    top: 14px;
+    left: 0;
+  }
+  .header__burger::after {
+    bottom: 0;
+  }
+  .header__burger::before {
+    top: 0;
+  }
+
+  .header__burger.active::before {
+    transform: rotate(-45deg);
+    top: 14px;
+  }
+  .header__burger.active::after {
+    transform: rotate(45deg);
+    bottom: 14px;
+  }
+  .header__burger.active span {
+    opacity: 0;
+  }
+  .header__menu {
+    position: fixed;
+    top: -700%;
+    left: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 70px 0 0 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.5s ease 0s;
+  }
+  .header__list {
+    display: block;
+  }
+  .header__item {
+    margin: 0 0 20px 0;
+  }
+}
+
+.header__menu.active {
+  top: 0;
+}
+.lock {
+  overflow: hidden;
+}
+// Breakpoints
+// smart phone vertical 320
+// smart phone gorizontal 576
+// tablet vertical 768
+// tablet gorizontal 992
+// desktop 1200
+// big desktop 1400

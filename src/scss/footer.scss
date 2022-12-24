@@ -1,0 +1,35 @@
+.footer {
+  text-align: center;
+  padding: 0 50px;
+  &__container {
+    height: 107px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 26px 0;
+  }
+
+  &__item {
+    font-size: 30px;
+    color: #21243d;
+    transition: color 0.5s ease 0s;
+    margin: 0 17px 0;
+
+    &:hover {
+      color: brown;
+    }
+  }
+
+  &__copyright {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    text-align: center;
+
+    color: #21243d;
+  }
+}

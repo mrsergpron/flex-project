@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{"title": "Главная"})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html',{})
+    <main class="page">
+      @@include('html/hello.html',{}) @@include('html/recent-posts.html',{})
+      @@include('html/featured-works.html',{})
+    </main>
+
+    @@include('html/footer.html',{})
+  </div>
+
+  <!-- <main></main> -->
+  <!-- <article>h2...h6 для статьи</article> -->
+  <!-- <section>h2...h6 слайдер, наша команда, последние записи </section> -->
+  <!-- <aside>для боковой панели</aside> -->
+  <!-- <figure>картинка, видео<img><figcaption>пояснение картинки</figcaption></figure> -->
+  <!-- <address>для адреса</address> -->
+  <!-- <nav>навигация</nav> -->
+  <!-- <time datetime="2014-06-11">2014-06-11</time> -->
+  <!-- <button aria-label="Кнопка меню"></button> -->
+  <!-- <header>один раз на странице</header> -->
+  <!-- <footer>один раз на странице</footer> -->
+  <!-- <time class="news_date" datetime="2014-07-11">2014-07-11</time> -->
+
+  <!-- images
+<img src="./img/400.png" alt="foto"
+srcset="./img/800.png 2x, ./img/1450.png 3x"/>
+
+<img src="./img/400.png" alt="foto"
+srcset="./img/400.png 400w, ./img/800.png 800w, ./img/1450.png 1500w"
+ sizes="(max-width: 400px) 400px,(max-width: 800px) 800px, 1450px"/>
+
+<figure>
+<img src="./img/400.png" alt="Elephant at sunset">
+<figcaption>An elephant at sunset</figcaption>
+</figure>
+
+<picture>
+ <source srcset="big.jpg" media="(min-width: 600px)">
+<img src="./img/400.png" alt="Абстрактное изображение">
+</picture>
+
+ <picture>
+  <source media="(max-width: 400px)" srcset="./img/400.png" sizes="50vw">
+  <source media="(max-width: 800px)" srcset="./img/800.png" sizes="75vw">
+  <img src="./img/400.png" alt="Абстрактное изображение">
+  </picture>
+
+  <picture>
+  <source type="image/webp" srcset="./img/i.webp">
+  <source type="image/svg+xml" srcset="pyramid.svg">
+  <img src="./img/400.png" alt="Абстрактное изображение">
+  </picture> -->
+
+  <!-- bootstrap -->
+  <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+  <!-- fontawesome -->
+  <!-- <script src="https://kit.fontawesome.com/9374e0dc51.js" crossorigin="anonymous"></script> -->
+  <!-- tailwindcss -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
