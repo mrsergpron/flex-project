@@ -1,5 +1,5 @@
-# Проект верстки сайта с помощью flax
+# Проект верстки сайта с помощью flex
 
-- Проект построен на: HTML / SCSS / Flax
+- Проект построен на: HTML / SCSS / Flex
 - Адаптированный
 - [Открыть проект](https://mrsergpron.github.io/flex-project/)
